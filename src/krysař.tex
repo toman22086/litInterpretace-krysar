@@ -9,12 +9,15 @@
 \usepackage{parskip}
 \usepackage{hyperref}
 
-% --- vzhled ---
-\geometry{a4paper, margin=2cm} % Nastavení okrajů
-\bibliographystyle{plain}
-\addto\captionsczech{\renewcommand{\refname}{Zdroje}}
+% --- BibLatex---
+\usepackage[backend=biber, style=iso-numeric]{biblatex}
+\addbibresource{zdroje.bib}
 
-% --- nadpis ---
+% --- Vzhled ---
+\geometry{a4paper, margin=2cm} % Nastavení okrajů
+
+
+% --- Nadpis ---
 \title{\textbf{LITERÁRNÍ INTERPRETACE}}
 \author{Michal}
 \date{\today}
@@ -27,6 +30,6 @@
 
 \input{práceSukázkou.tex}
 
-\bibliography{zdroje}
+\printbibliography[title={Zdroje}]
 
 \end{document}
