@@ -3,10 +3,18 @@
 % --- Základní balíčky pro češtinu ---
 \usepackage[czech]{babel}
 \usepackage[T1]{fontenc}
-\usepackage{geometry}
-\geometry{a4paper, margin=2cm} % Nastavení okrajů
-\usepackage{parskip}
 
+% --- Ostatní balíčky ---
+\usepackage{geometry}
+\usepackage{parskip}
+\usepackage{hyperref}
+
+% --- vzhled ---
+\geometry{a4paper, margin=2cm} % Nastavení okrajů
+\bibliographystyle{plain}
+\addto\captionsczech{\renewcommand{\refname}{Zdroje}}
+
+% --- nadpis ---
 \title{\textbf{LITERÁRNÍ INTERPRETACE}}
 \author{Michal}
 \date{\today}
@@ -17,70 +25,8 @@
 
 \input{obecnýÚvod.tex}
 
-\section*{Práce s ukázkou}
-\textit{[Zde vlož text své vybrané ukázky nebo stručně popiš, o jakou pasáž se jedná.]}
+\input{práceSukázkou.tex}
 
-\subsection*{1. Zasazení ukázky do kontextu díla}
-% Zde doplň, co se děje těsně před ukázkou a co po ní následuje.
-
-\subsection*{2. Časoprostor}
-Děj se odehrává v německém hanzovním městě \textbf{Hammeln}. Čas není přesně určen, ale historicky odkazuje na středověk (13. století).
-
-\subsection*{3. Téma a motivy}
-\textbf{Téma:} Konflikt výjimečného jednotlivce (Krysaře) s maloměšťáckou společností, zklamání v lásce, pomsta. \\
-\textbf{Motivy:} Píšťala (symbol moci a umění), krysy (symbol lidské chamtivosti a zkaženosti), sedmihradské království (iluze dokonalého světa), matka a dítě (symbol nevinnosti a nového začátku).
-
-\subsection*{4. Charakteristika postav}
-\begin{itemize}
-    \item \textbf{Krysař:} Osamělý, tajemný, málomluvný. Nemá jméno, definuje ho jen jeho povolání. Je hrdý a individualistický.
-    \item \textbf{Agnes:} Mladá dívka z Hammelnu, Krysařova láska.
-    \item \textbf{Kristián:} Snoubenec Agnes, typický omezený maloměšťák.
-    \item \textbf{Sepp Jörgen:} Rybář, zosobnění nevinnosti. Všechno mu dochází až o den později, díky čemuž unikne zkáze.
-    \item \textbf{Konšelé (Frosch a Strumm):} Symboly chamtivosti, falešnosti a pokrytectví.
-\end{itemize}
-
-\subsection*{5. Kompoziční výstavba}
-Dílo je psáno \textbf{chronologicky}, rozděleno do 26 krátkých kapitol. Závěr nabírá rychlý, až baladický spád.
-
-\subsection*{6. Vypravěč a forma}
-\textbf{Vypravěč:} Er-forma. Vševědoucí vypravěč, který ale nehodnotí, spíše suše a objektivně konstatuje děj.
-
-\subsection*{7. Typy promluv}
-Převažují \textbf{dialogy}, které jsou často úsečné a posouvají děj vpřed. Dále se objevuje přímá řeč a polopřímá řeč.
-
-\subsection*{8. Veršová výstavba}
-Netýká se tohoto díla (jde o prózu). Místy se ale objevuje rytmizovaná próza s baladickým nádechem.
-
-\subsection*{9. Jazyková rovina}
-Spisovný jazyk. Dyk používá krátké, úsečné věty, které textu dodávají dramatičnost a napětí. Jazyk je často archaický a strohý.
-
-\subsection*{10. Umělecké prostředky, tropy a figury}
-\begin{itemize}
-    \item \textbf{Symboly:} Píšťala, hora Koppel.
-    \item \textbf{Personifikace:} Příroda odráží náladu postav.
-    \item \textbf{Řečnické otázky a apoziopeze} (neukončené výpovědi -- tři tečky), které zvyšují tajemnost.
-    \item Opakování slov a motivů.
-\end{itemize}
-
-\subsection*{11. Vlastní názor na dílo (min. 200 slov)}
-% TADY ZAČNI PSÁT SVŮJ TEXT. Zkus se zamyslet nad tímto:
-% - Jak se ti kniha četla vzhledem ke svému stáří?
-% - Překvapil tě závěr (přežití Seppa Jörgena a nemluvněte)?
-% - Vidíš nějakou paralelu mezi chamtivostí tehdejšího města a dnešní dobou?
-% - Co přesně představuje zaslíbená země Sedmihradská?
-% - Doporučil/a bys to ostatním maturantům a proč?
-
-\subsection*{12. Filmová a divadelní zpracování}
-\begin{itemize}
-    \item Zvukově-animovaný film \textit{Krysař} (1985) od Jiřího Bárty.
-    \item Úspěšný český muzikál \textit{Krysař} od Daniela Landy (1996).
-    \item Film \textit{Krysař} (2003) režírovaný F. A. Brabcem (natočeno za 24 hodin, rekord zapsaný v Guinnessově knize).
-\end{itemize}
-
-\subsection*{13. Použité zdroje}
-\begin{itemize}
-    \item DYK, Viktor. \textit{Krysař}. Praha: [Název nakladatelství], [Rok vydání].
-    \item Další zdroj, např. sešit z literatury, webová stránka atd.
-\end{itemize}
+\bibliography{zdroje}
 
 \end{document}
