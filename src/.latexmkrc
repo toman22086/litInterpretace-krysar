@@ -1,2 +1,2 @@
-@default_files = ('main.tex');
+@default_files = ('krysař.tex');
 $out_dir = '../build';
